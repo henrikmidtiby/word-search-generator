@@ -129,6 +129,8 @@ def _get_lang_characters(lang: str) -> list:
         return string.ascii_uppercase
     elif lang == "de":
         return string.ascii_uppercase + "ẞÄÖÜ"
+    elif lang == "dk":
+        return string.ascii_uppercase + "ÆØÅ"
 
 
 def _run_simulation(words: list, character_set: str, dimensions: tuple,) -> numpy.array:

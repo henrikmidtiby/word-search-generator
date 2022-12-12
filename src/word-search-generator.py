@@ -305,7 +305,7 @@ def _send_to_stdout(
         row_string = ""
         for column in range(dimensions[0]):
             row_string += f"{board[row][column]}{',' if use_csv else ' '}"
-        print(row_string[:-2])
+        print(row_string[:-1])
 
 
 def _write_to_file(
